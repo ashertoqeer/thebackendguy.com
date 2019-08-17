@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Netflix Zuul 2 API Gateway Sample"
-permalink: "netflix-zuul-2-api-gateway-sample"
+permalink: "netflix-zuul-2-api-gateway-sample/"
 last_modified_at: 2019-05-03T00:00:00
 excerpt: "Netflix Zuul 2 is an open source API Gateway for micro-service. In this article we will look into some basic concepts of Zuul 2 with a basic sample."
 ---

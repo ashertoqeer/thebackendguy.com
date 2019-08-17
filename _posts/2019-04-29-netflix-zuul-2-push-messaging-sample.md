@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Netflix Zuul 2 Push Messaging Sample"
-permalink: "netflix-zuul-2-push-messaging-sample"
+permalink: "netflix-zuul-2-push-messaging-sample/"
 last_modified_at: 2019-04-29T00:00:00
 excerpt: "You can use Netflix Zuul 2 as a powerful, robust push messaging server, this article explains how to do that."
 ---

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Spring Schedule Tasks or Cron Jobs Dynamically"
-permalink: "spring-schedule-tasks-or-cron-jobs-dynamically"
+permalink: "spring-schedule-tasks-or-cron-jobs-dynamically/"
 last_modified_at: 2019-04-28T00:00:00
 excerpt: "Spring provides excellent support for scheduling tasks. You can simple schedule tasks or use cron expressions, either at compile time or dynamically at run time."
 ---
