@@ -61,7 +61,7 @@ Here is an example service:
 
 ### Example: 
 
-```
+```java
 import java.util.HashMap;
 import java.util.Map;
 import java.util.TimeZone;
