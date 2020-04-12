@@ -4,8 +4,8 @@ highlighter:      rouge
 
 # Setup
 title:            "The\nBackend\nGuy.com"
-tagline:          "Practical guides for backend developers"
-description:      "Practical guides for backend developers"
+tagline:          "A developer Journal"
+description:      "A developer Journal"
 url:              https://thebackendguy.com
 baseurl:          '/'
                   # the optional subpath of your site, e.g. "/blog"
