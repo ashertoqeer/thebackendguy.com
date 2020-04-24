@@ -11,19 +11,19 @@ Spring provides **Task Scheduler** API for scheduling tasks or cron jobs dynamic
 ```java
 public interface TaskScheduler {
 
-		// Run once at given timestamp
+	// Run once at given timestamp
         ScheduledFuture schedule(Runnable task, Date startTime);
 
-		// First run at given timestamp, then repeatedly after period 
+	// First run at given timestamp, then repeatedly after period 
         ScheduledFuture scheduleAtFixedRate(Runnable task, Date startTime, long period);
 
-		// Run as soon as possible, then repeatedly after period
+	// Run as soon as possible, then repeatedly after period
         ScheduledFuture scheduleAtFixedRate(Runnable task, long period);
 
-		// First run at given timestamp,then repeatedly after delay from last execution
+	// First run at given timestamp,then repeatedly after delay from last execution
         ScheduledFuture scheduleWithFixedDelay(Runnable task, Date startTime, long delay);
 
-		// Run as soon as possible, then repeatedly after delay from last execution
+	// Run as soon as possible, then repeatedly after delay from last execution
         ScheduledFuture scheduleWithFixedDelay(Runnable task, long delay);
         
         // Run as per trigger conditions
