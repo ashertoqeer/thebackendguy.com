@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Netflix Zuul 2 - A Basic Guide"
-permalink: "netflix-zuul2-basic-guide/"
+permalink: "netflix-zuul-2-api-gateway-sample/"
 last_modified_at: 2020-04-12T00:00:00
 excerpt: "Simple guide to use netflix zuul 2"
 category: "netflix"

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Zuul 2 Push Messaging Sample"
-permalink: "zuul2-push-messaging-sample/"
+permalink: "netflix-zuul-2-push-messaging-sample/"
 last_modified_at: 2020-04-12T00:00:00
 excerpt: "Zuul 2 Push Messaging Sample"
 category: "netflix"
