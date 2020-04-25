@@ -4,4 +4,4 @@ title: About
 permalink: /about/
 ---
 
-Hi, its [Asher](https://twitter.com/_ashert){:target="_blank"}, this website is my developer journal.
+Hi, its [Asher](https://twitter.com/ashertoqeer){:target="_blank"}, this website is my developer journal.
