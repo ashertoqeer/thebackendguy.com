@@ -9,4 +9,44 @@ category: "java"
 
 A simple utility class for Java BigDecimal comparison
 
-<script src="https://gist.github.com/ashertoqeer/a703d46443fb335e535cf819d1b0e9c3.js"></script>
+```java
+import java.math.BigDecimal;
+
+public class BigDecimalUtils {
+
+    private BigDecimalUtils() {
+    }
+
+    public static boolean isEqualTo(BigDecimal arg0, BigDecimal arg1) {
+        return arg0.compareTo(arg1) == 0;
+    }
+
+    public static boolean isGreaterThan(BigDecimal arg0, BigDecimal arg1) {
+        return arg0.compareTo(arg1) > 0;
+    }
+
+    public static boolean isGreaterThanOrEqualTo(BigDecimal arg0, BigDecimal arg1) {
+        return arg0.compareTo(arg1) >= 0;
+    }
+
+    public static boolean isLessThan(BigDecimal arg0, BigDecimal arg1) {
+        return arg0.compareTo(arg1) < 0;
+    }
+
+    public static boolean isLessThanOrEqualTo(BigDecimal arg0, BigDecimal arg1) {
+        return arg0.compareTo(arg1) <= 0;
+    }
+
+    public static boolean isNegative(BigDecimal arg0) {
+        return arg0.compareTo(BigDecimal.ZERO) < 0;
+    }
+
+    public static boolean isNonNegative(BigDecimal arg0) {
+        return arg0.compareTo(BigDecimal.ZERO) >= 0;
+    }
+
+    public static boolean isZero(BigDecimal arg0) {
+        return arg0.compareTo(BigDecimal.ZERO) == 0;
+    }
+}
+```
