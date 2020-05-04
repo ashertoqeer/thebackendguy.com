@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "KSqlDB Java"
-permalink: "basic-kafka-consumer-java/"
+permalink: "ksqldb-java/"
 last_modified_at: 2020-04-12T00:00:00
 excerpt: "A basic introduction to Kafka KSqlDB using Java"
 category: "kafka"
