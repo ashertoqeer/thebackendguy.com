@@ -253,4 +253,4 @@ public class KSqlClient {
 ```
 Thanks to chunked transfer encoding, we will get a constantly running sequence of events.
 
-That's all, [Documentation](https://docs.ksqldb.io/en/latest/developer-guide/). 
+That's all, [Documentation](https://docs.ksqldb.io/en/latest/developer-guide/){:target="_blank"}. 
