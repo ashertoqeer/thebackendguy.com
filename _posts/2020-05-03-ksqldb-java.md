@@ -12,17 +12,17 @@ category: "kafka"
 #### An Example Setup:
 ![A diagram of example KSql setup](/assets/img/ksqldb-java-example-setup.png)
 
-As you can see from above sample setup, KSqlDB is totally independent of Kafka cluster and, in fact, it is just another consumer. However, it has its own clients which are NOT Kafka consumers. Instead those clients are directly querying KSqlDB and knows nothing about kafka.
+As you can see from the above sample setup, KSqlDB is independent of the Kafka cluster, and it is just another consumer. However, it has its own clients which are NOT Kafka consumers. Instead those clients are directly querying KSqlDB and knows nothing about Kafka.
 
-This separation of concerns is extremely powerful. For example if one of the above client is a mobile app and other client is a web admin console and both are interested in same set of events to render some dashboard. If there was no KSqlDB, then both of them have to use stream apis natively which is not only duplication, but also add unnecessary complexity.
+This separation of concerns is extremely powerful. For example if one of the above clients is a mobile app and another client is a web admin console and both are interested in the same set of events to render some dashboard. If there was no KSqlDB, then both of them have to use stream APIs natively which is not only add duplication, but also add unnecessary complexity.
 
 With KSqlDB, both clients just need to query using SQL like syntax and get results immediately.
 
 #### Using KSqlDB with Java
-Let's create an example demonstration using Java. Make sure you have a Kafka instance running at `localhost:9092`. Let's create a sample producer in Java (Using kafka clients library)
+Let's create an example demonstration using Java. Make sure you have a Kafka instance running at `localhost:9092`. Let's create a sample producer in Java (Using Kafka clients library)
 
 ##### Producer
-A sample producer to publish a sample product json on kafka topic `sales`. 
+A sample producer to publish a sample product Json on Kafka topic `sales`. 
 ```java
 public class Producer {
 
@@ -79,12 +79,12 @@ docker run -d \
   confluentinc/cp-ksql-server:5.4.1 
 ```
 
-+ `--network host` means use host network as docker network. we need this since kafka is at `localhost:9092`.
++ `--network host` means use host network as docker network. we need this since Kafka is at `localhost:9092`.
 + `-e KSQL_BOOTSTRAP_SERVERS=localhost:9092` telling KSqlDB where Kafka is running.
 + `-e KSQL_LISTENERS=http://0.0.0.0:8088` the endpoint which we would like to use to query KSqlDB.
 + `-e KSQL_KSQL_SERVICE_ID=ksql_service_2_` specifying serviceId
 
-That's it, till now we got a producer publishing events on a kafka topic and a running KSqlDB. Now we need a KSqlDB client to start querying.
+That's it, till now we got a producer publishing events on a Kafka topic and a running KSqlDB. Now we need a KSqlDB client to start querying.
 
 #### KSqlDB CLI Client
 KSqlDB have a docker based console client, just run following command.
@@ -136,11 +136,11 @@ You need to use Streams and Tables to query data in KSqlDB.
 
 The Stream and Table both operate on events in a different way. 
 
-Stream is a sequence of events, it is immutable, it only supports inserting new events while existing event can't not be changed.
+The Stream is a sequence of events, it is immutable, it only supports inserting new events while existing event can't not be changed.
 
-Table is an aggregation of events, it is mutable, it supports inserting new events (rows), as well as, updating existing events (rows).
+The Table is an aggregation of events, it is mutable, it supports inserting new events (rows), as well as, updating existing events (rows).
 
-Here is a really nice blog post on difference between Streams and Tables [Streams and Tables in Apache Kafka: A Primer](https://www.confluent.io/blog/kafka-streams-tables-part-1-event-streaming/){:target="_blank"}
+Here is a really nice blog post on the difference between Streams and Tables [Streams and Tables in Apache Kafka: A Primer](https://www.confluent.io/blog/kafka-streams-tables-part-1-event-streaming/){:target="_blank"}
 
 #### KSqlDB Creating and Querying Stream
 
@@ -192,7 +192,7 @@ ksql> SELECT * FROM sales_stream where status = 'RETURN' EMIT CHANGES;
 
 That `EMIT CHANGES` indicates that this is a Push query. There are two types of queries in KSqlDB Push queries and Pull queries.
 
-Push queries are NEVER TERMINATING queries, they constantly push results in real time.
+Push queries are NEVER TERMINATING queries, they constantly push results in real-time.
 
 Pull queries work like traditional queries, they pull some specific data and then terminate. 
 
@@ -221,7 +221,7 @@ You could do a lot more with KSqlDB queries, see [Developer Guide](https://docs.
 #### KSqlDB Java Client:
 So far, we have used KSqlDB CLI client, its time to get some taste of how to query from a Java application.
 
-KSqlDB provides a Rest endpoint to execute query and return results. From the [docs](https://docs.ksqldb.io/en/latest/developer-guide/ksqldb-rest-api/query-endpoint/):
+KSqlDB provides a Rest endpoint to execute queries and return results. From the [docs](https://docs.ksqldb.io/en/latest/developer-guide/ksqldb-rest-api/query-endpoint/):
 
 > The /query resource lets you stream the output records of a SELECT statement via a chunked transfer encoding. The response is streamed back until the LIMIT specified in the statement is reached, or the client closes the connection. If no LIMIT is specified in the statement, then the response is streamed until the client closes the connection.
 
