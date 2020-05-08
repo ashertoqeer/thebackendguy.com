@@ -2,7 +2,7 @@
 layout: post
 title: "Java 8 Functional Programming Simplified"
 permalink: "java-8-functional-programming-simplified/"
-last_modified_at: 2019-04-28T00:00:00
+last_modified_at: 2019-06-29T00:00:00
 excerpt: "This article will explain Java 8 functional programming related concepts, i.e Lambda expressions, Functional interfaces, etc."
 category: "java"
 ---
