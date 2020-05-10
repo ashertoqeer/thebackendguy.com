@@ -119,7 +119,7 @@ module module.utils {
 ```
 In the above file, we are specifying our module, the name of the module is `module.utils`, you can name it whatever you want, but is a convention to name module the same way as we name packages.
 
-The Other thing is we are exporting a package `com.module.utils`. We want this package to be available in other modules. If don't explicitly export it, then by default, it will be only accessible within the module itself.
+The Other thing is we are exporting a package `com.module.utils`. We want this package to be available in other modules. If you don't explicitly export it, then by default, it will be only accessible within the module itself.
 
 That's it, we have created a simple module.
 
