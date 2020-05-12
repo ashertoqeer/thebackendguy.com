@@ -9,7 +9,7 @@ category: "java"
 
 Classes are the basic unit of a program in Java. **Packages** are used to **manage classes** and **modules** are used to **manage packages**. 
 
-Modules were introduced in Java 9. Before that, an application consists of packages that hold classes. It is a problem in the large code bases. A public class means that anyone from anywhere could access that class, which can lead to unwanted dependencies. Modules are uniquely named, reusable group of related packages as well as resources. 
+Modules were introduced in Java 9. Before that, an application consists of packages that hold classes. It is a problem in large codebases. A public class means that anyone from anywhere could access that class, which can lead to unwanted dependencies. Modules are uniquely named, reusable groups of related packages as well as resources. 
 
 A Module controls which packages should be private for internal use only and which should be public for other modules to use. In modular Java, a public class no longer means that anyone can access that class from anywhere, instead, it is public within a module only, unless module **exports its package** for other modules to use. It will print out a list of Java modules.
 
@@ -88,7 +88,7 @@ $ cat > module.utils/com/module/utils/Utils.java
 
 ```
 
-paste following code in console, press `Ctrl+D` when finish
+paste following code in console, press `Ctrl+D` when finished
 
 ```java
 package com.module.utils;
@@ -107,7 +107,7 @@ To tell Java we are writing a module, we need to provide `module-info.java` at t
 $ cat > module.utils/module-info.java
 
 ```
-paste following code in console, press `Ctrl+D` when finish
+paste following code in console, press `Ctrl+D` when finished
 
 
 ```java
@@ -117,7 +117,7 @@ module module.utils {
 
 [Press Ctrl+D]
 ```
-In the above file, we are specifying our module, the name of the module is `module.utils`, you can name it whatever you want, but is a convention to name module the same way as we name packages.
+In the above file, we are specifying our module, the name of the module is `module.utils`, you can name it whatever you want but is a convention to name module the same way as we name packages.
 
 The Other thing is we are exporting a package `com.module.utils`. We want this package to be available in other modules. If you don't explicitly export it, then by default, it will be only accessible within the module itself.
 
@@ -125,13 +125,13 @@ That's it, we have created a simple module.
 
 ### App Module
 
-The Next step is to complete `module.app`. Again, we need `module-info.java` at root of our App module and since our app module has a dependency on the utils module, we need to specify that dependency in `module-info.java`. Create `module-info.java` with the following command: 
+The Next step is to complete `module.app`. Again, we need `module-info.java` at the root of our App module and since our app module has a dependency on the utils module, we need to specify that dependency in `module-info.java`. Create `module-info.java` with the following command: 
 
 ```
 $ cat > module.app/module-info.java
 ```
 
-paste following code in console, press `Ctrl+D` when finish
+paste following code in console, press `Ctrl+D` when finished
 
 ```java
 module module.app {
@@ -150,7 +150,7 @@ $ cat > module.app/com/module/app/Main.java
 
 ```
 
-paste following code in console, press `Ctrl+D` when finish
+paste following code in console, press `Ctrl+D` when finished
 
 ```java
 package com.module.app;
@@ -214,4 +214,4 @@ $ java --module-path outDir -m module.app/com.module.app.Main
 
 `3` is printed as a result, which is the result of `Utils.sum(1,2)`, the code we have written in our Main class in the App module. 
 
-That was a basic introduction to modules in Java. As a side note, I would like to mention that you should not confuse Java modules with maven modules or IntelliJ IDEA modules. Maven and IntelliJ IDEA have their concepts of modules too. Also IntelliJ IDEA supports Java modules too see this post [here](https://blog.jetbrains.com/idea/2017/03/support-for-java-9-modules-in-intellij-idea-2017-1/){:target="_blank"}.
+That was a basic introduction to modules in Java. As a side note, I would like to mention that you should not confuse Java modules with maven modules or IntelliJ IDEA modules. Maven and IntelliJ IDEA have their concepts of modules too. Also, IntelliJ IDEA supports Java modules too see their blog post [here](https://blog.jetbrains.com/idea/2017/03/support-for-java-9-modules-in-intellij-idea-2017-1/){:target="_blank"}.
