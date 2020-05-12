@@ -11,9 +11,9 @@ Classes are the basic unit of a program in Java. **Packages** are used to **mana
 
 Modules were introduced in Java 9. Before that, an application consists of packages that hold classes. It is a problem in large codebases. A public class means that anyone from anywhere could access that class, which can lead to unwanted dependencies. Modules are uniquely named, reusable groups of related packages as well as resources. 
 
-A Module controls which packages should be private for internal use only and which should be public for other modules to use. In modular Java, a public class no longer means that anyone can access that class from anywhere, instead, it is public within a module only, unless module **exports its package** for other modules to use. It will print out a list of Java modules.
+A Module controls which packages should be private for internal use only and which should be public for other modules to use. In modular Java, a public class no longer means that anyone can access that class from anywhere, instead, it is public within a module only, unless module **exports its package** for other modules to use. 
 
-From Java 9, the language itself has broken down into modules. Run `java --list-modules` on JDK 9 or above.
+From Java 9, the language itself has broken down into modules. Run `java --list-modules` on JDK 9 or above. It will print out a list of Java modules.
 
 ```console
 $ java --list-modules
