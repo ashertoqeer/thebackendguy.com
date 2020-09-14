@@ -3,7 +3,7 @@ author:
   name: 
   email: 
 description: > # this means to ignore newlines until "show_excerpts:"
-  A backend developer's journal.
+  A website for backend developers.
 
 show_excerpts: true # set to true to show excerpts on the homepage
 
