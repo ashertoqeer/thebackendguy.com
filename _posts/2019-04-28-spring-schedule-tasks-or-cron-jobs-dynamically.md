@@ -1,10 +1,10 @@
 ---
 layout: post
-title: "Spring Schedule Tasks or Cron Jobs Dynamically"
+title: "Java Spring Schedule Tasks or Cron Jobs Dynamically"
 permalink: "spring-schedule-tasks-or-cron-jobs-dynamically/"
 last_modified_at: 2019-04-28T00:00:00
 excerpt: "Spring provides excellent support for scheduling tasks. You can simple schedule tasks or use cron expressions, either at compile time or dynamically at run time."
-category: "spring"
+category: "java-spring-framework"
 ---
 Spring provides **Task Scheduler** API for scheduling tasks or cron jobs dynamically. It could be directly injected to any bean given that you have **@EnableScheduling** in your configuration. It takes a **Runnable** to execute in future. It provides different methods to schedule task.
 

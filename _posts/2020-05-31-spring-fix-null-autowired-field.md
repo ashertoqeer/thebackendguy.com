@@ -4,7 +4,7 @@ title: "Spring Fix Null @Autowired Field"
 permalink: "spring-fix-null-autowired-field/"
 last_modified_at: 2020-05-31T00:00:00
 excerpt: "Why is your @Autowired field is null and how to fix it"
-category: "spring"
+category: "java-spring-framework"
 ---
 
 Null `@Autowired` field is a common problem in Spring and the main reason for this is, the instance, in which `@Autowired` is used, is not a Spring-managed instance. 
