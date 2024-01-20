@@ -4,5 +4,13 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
-{: .prompt-tip }
+# About Me
+
+Hi,
+
+I am Asher and this is a place where I write about my passion, which happens to be programming. I love Java and backend development, hence the name *TheBackendGuy*.
+
+### Find Me On
+- [LinkedIn](https://www.linkedin.com/in/ashertoqeer/)
+- [Medium](https://medium.com/@thebackendguy)
+- [Dev Community](https://dev.to/ashertoqeer)
