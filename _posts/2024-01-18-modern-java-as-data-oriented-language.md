@@ -5,8 +5,6 @@ categories: [Java, Data Oriented Programming]
 tags: [java,record-pattern,dop]     # TAG names should always be lowercase
 ---
 
-# Modern Java as Data-Oriented Language
-
 Java, at its core, is an Object Oriented Language. But, Object Oriented Programming alone can't solve all of the problems efficiently. So, with time Java added support for helpful concepts from other programming paradigms. Like, Java 8 introduced first-class support for Functional Programming and now, Java is introducing first-class support for Data-Oriented Programming or DOP.
 
 In this article, we will see what is Data Oriented Programming, why it is useful and how to benefit as a Java developer.
